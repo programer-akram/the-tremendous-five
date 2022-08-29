@@ -122,4 +122,25 @@ function setTextElementValueById(elementId, newValue) {
 
 
 
+// calculate player expenses
+document.getElementById('btn-calculate').addEventListener('click', function () {
+
+    const perPlayerCostField = document.getElementById('per-player-cost');
+    const takeString = perPlayerCostField.value;
+    const perPlayerCost = parseInt(takeString);
+
+    const olString = document.getElementById('selected').childNodes.length;
+    const ol = parseInt(olString);
+
+    const playerExpenses = perPlayerCost * (ol - 1);
+
+
+    const previousPlayerExpenses = getTextElementValueById('player-expenses');
+    setTextElementValueById('player-expenses', playerExpenses);
+
+});
+
+
+
+
 
