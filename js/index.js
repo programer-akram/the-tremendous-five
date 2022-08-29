@@ -103,7 +103,13 @@ document.getElementById('btn-pele').addEventListener('click',function(){
 });
 
 
-
+//  convert string to float
+function getTextElementValueById(elementId) {
+    const textElement = document.getElementById(elementId);
+    const textElementValueString = textElement.innerText;
+    const textElementValue = parseFloat(textElementValueString);
+    return textElementValue;
+}
 
 
 
