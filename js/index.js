@@ -141,6 +141,31 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 });
 
 
+// calculate Total
+
+document.getElementById('btn-calculate-total').addEventListener('click', function () {
+
+    const managerCostField = document.getElementById('manager');
+    const managerString = managerCostField.value;
+    const managerAmount = parseInt(managerString);
+
+
+    const coachCostField = document.getElementById('coach');
+    const coachString = coachCostField.value;
+    const coachAmount = parseInt(coachString);
+
+    const playerExpense = getTextElementValueById('player-expenses');
+
+    const totalExpenses = playerExpense + managerAmount + coachAmount;
+
+    const total = getTextElementValueById('total-expense');
+    setTextElementValueById('total-expense', totalExpenses);
+
+});
+
+
+
+
 
 
 
