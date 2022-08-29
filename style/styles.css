@@ -1,0 +1,16 @@
+#heading{
+    font-family: 'Berkshire Swash';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 76px !important;
+}
+p{
+    font-weight: 700;
+    color: white;
+}
+.card-body{
+    background-color: black;
+}
+.card-title{
+    color: white;
+}
